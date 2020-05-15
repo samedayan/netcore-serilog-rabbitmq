@@ -6,6 +6,7 @@ using Serilog;
 using Serilog.Sinks.Elasticsearch;
 using System;
 using System.Reflection;
+using Microsoft.Extensions.Logging;
 using Serilog.Events;
 using Serilog.Exceptions;
 using Serilog.Formatting.Elasticsearch;
@@ -39,6 +40,7 @@ namespace Elk.Serilog.Web
                     configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
                     configuration.AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable(ProjectConst.EnvironmentVariable)}.json", optional: true);
                 })
+                .ConfigureLogging((hostingContext, config) => { config.ClearProviders(); })
                 .UseSerilog();
 
         private static void Logging()
