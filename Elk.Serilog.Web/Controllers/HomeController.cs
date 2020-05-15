@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Elk.Serilog.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Elk.Serilog.Web.Models;
+using System;
+using System.Diagnostics;
 
 namespace Elk.Serilog.Web.Controllers
 {
@@ -20,11 +17,22 @@ namespace Elk.Serilog.Web.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("HomeController Index Page Viewed {date}", DateTime.Now);
+
             return View();
         }
 
         public IActionResult Privacy()
         {
+            try
+            {
+                throw new Exception($"Sample Error");
+            }
+            catch (Exception exception)
+            {
+                _logger.LogError(exception, $"Error --> {exception.Message}");
+            }
+
             return View();
         }
 
