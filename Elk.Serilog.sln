@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elk.Serilog.Web", "Elk.Serilog.Web\Elk.Serilog.Web.csproj", "{EDFADF60-F71F-4473-93CA-7BAF1C186D10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elk.Serilog.Common", "Elk.Serilog.Common\Elk.Serilog.Common.csproj", "{3304497C-07BC-4468-B222-697E8B81CBCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elk.Serilog.Common", "Elk.Serilog.Common\Elk.Serilog.Common.csproj", "{3304497C-07BC-4468-B222-697E8B81CBCF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{880EE49E-0EFC-46BE-A4D6-FBD6731CF5E0}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
