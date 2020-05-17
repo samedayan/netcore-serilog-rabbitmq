@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Elk.Serilog.RabbitMq.Client.Common\Elk.Serilog.RabbitMq.Client.Common.csproj" />
+    <ProjectReference Include="..\Elk.Serilog.RabbitMq.Client.Model\Elk.Serilog.RabbitMq.Client.Model.csproj" />
   </ItemGroup>
 
 </Project>

@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\server\Elk.Serilog.RabbitMq.Service\Elk.Serilog.RabbitMq.Service.csproj" />
     <ProjectReference Include="..\Elk.Serilog.RabbitMq.Client.Common\Elk.Serilog.RabbitMq.Client.Common.csproj" />
     <ProjectReference Include="..\Elk.Serilog.RabbitMq.Client.Model\Elk.Serilog.RabbitMq.Client.Model.csproj" />
     <ProjectReference Include="..\Elk.Serilog.RabbitMq.Client.Service\Elk.Serilog.RabbitMq.Client.Service.csproj" />
