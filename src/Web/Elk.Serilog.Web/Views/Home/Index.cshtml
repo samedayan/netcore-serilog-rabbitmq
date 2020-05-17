@@ -1,8 +1,26 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model List<Elk.Serilog.RabbitMq.Model.Customer>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container-fluid">
+    @using(Html.BeginForm("Post","Home","FormMethod.Post"))   
+    {
+        <select name="Name" id="Name" onchange="setValue(this.options[this.selectedIndex])">
+            @foreach (var customer in Model)
+            {
+                <option value="@customer.Name" id="@customer.Id" price="@customer.Price">@customer.Name</option>
+
+            }
+        </select>
+
+        <input type="text" id="value">
+        <input type="hidden" id="id">
+        <input type="submit" value="Update" class="btn btn-success">
+    }
 </div>
+
+@section Scripts
+{
+    <script src="js/pages/home-index.js" asp-append-version="true"></script>
+}
