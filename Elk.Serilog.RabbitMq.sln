@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elk.Serilog.RabbitMq.Web", "src\Web\Elk.Serilog.RabbitMq.Web\Elk.Serilog.RabbitMq.Web.csproj", "{EDFADF60-F71F-4473-93CA-7BAF1C186D10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elk.Serilog.RabbitMq.Web", "src\server\Elk.Serilog.RabbitMq.Web\Elk.Serilog.RabbitMq.Web.csproj", "{EDFADF60-F71F-4473-93CA-7BAF1C186D10}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elk.Serilog.RabbitMq.Common", "src\Web\Elk.Serilog.Common\Elk.Serilog.RabbitMq.Common.csproj", "{3304497C-07BC-4468-B222-697E8B81CBCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elk.Serilog.RabbitMq.Common", "src\server\Elk.Serilog.Common\Elk.Serilog.RabbitMq.Common.csproj", "{3304497C-07BC-4468-B222-697E8B81CBCF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{880EE49E-0EFC-46BE-A4D6-FBD6731CF5E0}"
 	ProjectSection(SolutionItems) = preProject
@@ -14,13 +14,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{880EE4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0448A58F-FDD2-4BD1-8B70-445C891207E2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{47A074B7-C873-4E68-AA35-E532C7ECA269}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "server", "server", "{47A074B7-C873-4E68-AA35-E532C7ECA269}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elk.Serilog.RabbitMq.Model", "src\Web\Elk.Serilog.RabbitMq.Model\Elk.Serilog.RabbitMq.Model.csproj", "{D0BC400A-A0C0-429E-BE1E-7BF007C7AD3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elk.Serilog.RabbitMq.Model", "src\server\Elk.Serilog.RabbitMq.Model\Elk.Serilog.RabbitMq.Model.csproj", "{D0BC400A-A0C0-429E-BE1E-7BF007C7AD3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elk.Serilog.RabbitMq.ViewModel", "src\Web\Elk.Serilog.RabbitMq.ViewModel\Elk.Serilog.RabbitMq.ViewModel.csproj", "{85276E38-25AF-4D5B-8F1F-07069F66F657}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elk.Serilog.RabbitMq.ViewModel", "src\server\Elk.Serilog.RabbitMq.ViewModel\Elk.Serilog.RabbitMq.ViewModel.csproj", "{85276E38-25AF-4D5B-8F1F-07069F66F657}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elk.Serilog.RabbitMq.Service", "src\Web\Elk.Serilog.RabbitMq.Service\Elk.Serilog.RabbitMq.Service.csproj", "{5C3F91B0-DB56-465B-A854-409A004AF5C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elk.Serilog.RabbitMq.Service", "src\server\Elk.Serilog.RabbitMq.Service\Elk.Serilog.RabbitMq.Service.csproj", "{5C3F91B0-DB56-465B-A854-409A004AF5C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

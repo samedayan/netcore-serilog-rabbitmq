@@ -23,6 +23,7 @@ namespace Elk.Serilog.RabbitMq.Service
             _settings = settings;
 
             Customers = new List<Customer>();
+            Customers = GetSampleData();
         }
 
         public List<Customer> GetSampleData()
