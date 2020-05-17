@@ -1,10 +1,10 @@
-﻿using Elk.Serilog.RabbitMq.Service;
+﻿using Elk.Serilog.RabbitMq.Model;
+using Elk.Serilog.RabbitMq.Service;
 using Elk.Serilog.RabbitMq.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Diagnostics;
-using Elk.Serilog.RabbitMq.Model;
 
 namespace Elk.Serilog.RabbitMq.Web.Controllers
 {

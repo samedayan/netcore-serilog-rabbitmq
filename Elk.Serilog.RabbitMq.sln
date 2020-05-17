@@ -16,11 +16,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0448A58F-FDD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{47A074B7-C873-4E68-AA35-E532C7ECA269}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elk.Serilog.RabbitMq.Model", "Elk.Serilog.RabbitMq.Model\Elk.Serilog.RabbitMq.Model.csproj", "{D0BC400A-A0C0-429E-BE1E-7BF007C7AD3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elk.Serilog.RabbitMq.Model", "src\Web\Elk.Serilog.RabbitMq.Model\Elk.Serilog.RabbitMq.Model.csproj", "{D0BC400A-A0C0-429E-BE1E-7BF007C7AD3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elk.Serilog.RabbitMq.ViewModel", "Elk.Serilog.RabbitMq.ViewModel\Elk.Serilog.RabbitMq.ViewModel.csproj", "{85276E38-25AF-4D5B-8F1F-07069F66F657}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elk.Serilog.RabbitMq.ViewModel", "src\Web\Elk.Serilog.RabbitMq.ViewModel\Elk.Serilog.RabbitMq.ViewModel.csproj", "{85276E38-25AF-4D5B-8F1F-07069F66F657}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elk.Serilog.RabbitMq.Service", "Elk.Serilog.RabbitMq.Service\Elk.Serilog.RabbitMq.Service.csproj", "{5C3F91B0-DB56-465B-A854-409A004AF5C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elk.Serilog.RabbitMq.Service", "src\Web\Elk.Serilog.RabbitMq.Service\Elk.Serilog.RabbitMq.Service.csproj", "{5C3F91B0-DB56-465B-A854-409A004AF5C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

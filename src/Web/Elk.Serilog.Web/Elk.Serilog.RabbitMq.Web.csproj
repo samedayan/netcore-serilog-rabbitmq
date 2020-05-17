@@ -15,9 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Elk.Serilog.RabbitMq.Service\Elk.Serilog.RabbitMq.Service.csproj" />
-    <ProjectReference Include="..\..\..\Elk.Serilog.RabbitMq.ViewModel\Elk.Serilog.RabbitMq.ViewModel.csproj" />
-    <ProjectReference Include="..\Elk.Serilog.Common\Elk.Serilog.RabbitMq.Common.csproj" />
+    <ProjectReference Include="..\Elk.Serilog.RabbitMq.Service\Elk.Serilog.RabbitMq.Service.csproj" />
+    <ProjectReference Include="..\Elk.Serilog.RabbitMq.ViewModel\Elk.Serilog.RabbitMq.ViewModel.csproj" />
   </ItemGroup>
 
 </Project>

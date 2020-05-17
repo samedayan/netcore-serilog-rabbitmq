@@ -1,5 +1,3 @@
-using System;
-using System.Reflection;
 using Elk.Serilog.RabbitMq.Common.ProjectConst;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -10,6 +8,8 @@ using Serilog.Events;
 using Serilog.Exceptions;
 using Serilog.Formatting.Elasticsearch;
 using Serilog.Sinks.Elasticsearch;
+using System;
+using System.Reflection;
 
 namespace Elk.Serilog.RabbitMq.Web
 {

@@ -12,8 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Elk.Serilog.Common\Elk.Serilog.RabbitMq.Common.csproj" />
     <ProjectReference Include="..\Elk.Serilog.RabbitMq.Model\Elk.Serilog.RabbitMq.Model.csproj" />
-    <ProjectReference Include="..\src\Web\Elk.Serilog.Common\Elk.Serilog.RabbitMq.Common.csproj" />
   </ItemGroup>
 
 </Project>
