@@ -1,4 +1,4 @@
-﻿namespace Elk.Serilog.Common.ProjectConst
+﻿namespace Elk.Serilog.RabbitMq.Common.ProjectConst
 {
     public static class ProjectConst
     {

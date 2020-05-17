@@ -1,17 +1,17 @@
-using Elk.Serilog.Common.ProjectConst;
+using System;
+using System.Reflection;
+using Elk.Serilog.RabbitMq.Common.ProjectConst;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Serilog;
-using Serilog.Sinks.Elasticsearch;
-using System;
-using System.Reflection;
 using Microsoft.Extensions.Logging;
+using Serilog;
 using Serilog.Events;
 using Serilog.Exceptions;
 using Serilog.Formatting.Elasticsearch;
+using Serilog.Sinks.Elasticsearch;
 
-namespace Elk.Serilog.Web
+namespace Elk.Serilog.RabbitMq.Web
 {
     public class Program
     {

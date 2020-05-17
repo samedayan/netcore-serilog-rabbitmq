@@ -1,6 +1,4 @@
-using System;
-
-namespace Elk.Serilog.Web.Models
+namespace Elk.Serilog.RabbitMq.Web.Models
 {
     public class ErrorViewModel
     {

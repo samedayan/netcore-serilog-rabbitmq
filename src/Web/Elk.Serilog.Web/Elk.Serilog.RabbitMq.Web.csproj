@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Elk.Serilog.Common\Elk.Serilog.Common.csproj" />
+    <ProjectReference Include="..\Elk.Serilog.Common\Elk.Serilog.RabbitMq.Common.csproj" />
   </ItemGroup>
 
 </Project>

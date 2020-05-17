@@ -1,10 +1,10 @@
-﻿using Elk.Serilog.Web.Models;
+﻿using System;
+using System.Diagnostics;
+using Elk.Serilog.RabbitMq.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Diagnostics;
 
-namespace Elk.Serilog.Web.Controllers
+namespace Elk.Serilog.RabbitMq.Web.Controllers
 {
     public class HomeController : Controller
     {
