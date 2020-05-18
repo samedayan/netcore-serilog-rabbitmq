@@ -9,17 +9,12 @@
     @foreach (var customer in Model)
     {
         <div class="radio">
-            <label for="female" style="width : 125px">
+            <label>
                 <input type="radio" name="ID" id="ID" value="@customer.Id">@customer.Name
             </label>
-            <b>Fiyat</b> : <label>@customer.Price ₺</label>
+            <label>@customer.Price ₺</label>
         </div>
     }
     <br>
     <input type="submit" value="Buy" class="btn btn-success">
-}
-
-@section Scripts
-{
-    <script src="js/pages/home-index.js" asp-append-version="true"></script>
 }
