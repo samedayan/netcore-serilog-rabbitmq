@@ -9,5 +9,10 @@ namespace Elk.Serilog.RabbitMq.Client.Extensions
         {
             services.AddTransient<IService, Service.Service>();
         }
+
+        public static void AddExtensionServices(this IServiceCollection services)
+        {
+            services.AddSignalR();
+        }
     }
 }

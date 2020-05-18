@@ -4,7 +4,7 @@
 
 @model List<Elk.Serilog.RabbitMq.Client.Model.Customer>
 
-@using (Html.BeginForm("Post", "Home", "FormMethod.Post"))
+@using (Html.BeginForm("Monitoring", "Home", "FormMethod.Post"))
 {
     @foreach (var customer in Model)
     {
@@ -16,7 +16,7 @@
         </div>
     }
     <br>
-    <input type="submit" value="Satın Al" class="btn btn-success">
+    <input type="submit" value="Buy" class="btn btn-success">
 }
 
 @section Scripts

@@ -2,17 +2,19 @@
 using Elk.Serilog.RabbitMq.Client.Model;
 using Microsoft.Extensions.Options;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Elk.Serilog.RabbitMq.Client.Service
 {
     public class Service : IService
     {
         private readonly IOptions<ProjectSettings> _settings;
-        public List<Customer> Customers = new List<Customer>();
+        public List<Customer> Customers;
 
         public Service(IOptions<ProjectSettings> settings)
         {
             _settings = settings;
+            Customers = new List<Customer>();
             Customers = GetSampleData();
         }
 
@@ -40,6 +42,11 @@ namespace Elk.Serilog.RabbitMq.Client.Service
             });
 
             return Customers;
+        }
+
+        public Customer GetCustomerInfoWithCustomerId(int customerId)
+        {
+            return Customers.FirstOrDefault(s => s.Id == customerId);
         }
     }
 }

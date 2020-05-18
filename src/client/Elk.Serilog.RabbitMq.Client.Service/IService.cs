@@ -6,5 +6,6 @@ namespace Elk.Serilog.RabbitMq.Client.Service
     public interface IService
     {
         List<Customer> GetSampleData();
+        Customer GetCustomerInfoWithCustomerId(int customerId);
     }
 }

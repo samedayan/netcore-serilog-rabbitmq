@@ -1,5 +1,7 @@
+using Elk.Serilog.RabbitMq.Client.Common.Helper;
 using Elk.Serilog.RabbitMq.Client.Common.ProjectConst;
 using Elk.Serilog.RabbitMq.Client.Extensions;
+using Elk.Serilog.RabbitMq.Client.Model;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -23,6 +25,7 @@ namespace Elk.Serilog.RabbitMq.Client
             services.AddOptions();
             services.Configure<ProjectSettings>(Configuration.GetSection("Settings"));
             services.AddBusinessServices();
+            services.AddExtensionServices();
             services.AddControllersWithViews();
         }
 
@@ -45,6 +48,11 @@ namespace Elk.Serilog.RabbitMq.Client
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<LiveHub>("livehub");
+            });
 
             app.UseEndpoints(endpoints =>
             {

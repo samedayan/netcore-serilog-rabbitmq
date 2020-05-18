@@ -45,9 +45,18 @@ namespace Elk.Serilog.RabbitMq.Client.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public IActionResult Post()
+        public IActionResult Monitoring(int customerId)
         {
-            return Ok();
+            try
+            {
+                var customer = _service.GetCustomerInfoWithCustomerId(customerId);
+
+                return View(customer);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
         }
     }
 }
